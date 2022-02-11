@@ -1,0 +1,16 @@
+Fitur apa saja yang dibutuhkan:
+
+1. pencatat keuangan 
+2. pencatat tugas yang harus dikerjakan dengan tabel prioritas
+3. penyimpanan link
+4. project yang akan dikerjakan
+5. notes
+
+
+
+reverensi:
+https://dribbble.com/shots/17313062-Finance-Dashboard
+https://dribbble.com/shots/17183093-Wallet-Money-Management-Dashboard-App
+
+https://dribbble.com/shots/15210961-Task-Management-App
+https://dribbble.com/shots/14848933-Rengse-To-Do-List-App-Design
