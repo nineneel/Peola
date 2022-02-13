@@ -52,8 +52,8 @@
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 1.65rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
+    --h1-font-size: 1.45rem;
+    --h2-font-size: 1.3rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
@@ -176,12 +176,20 @@ img {
     color: var(--blue-color);
 }
 
+.font__purple {
+    color: var(--purple-color);
+}
+
 .font__green {
     color: var(--green-color);
 }
 
 .font__red {
     color: var(--red-color);
+}
+
+.font__purple {
+    color: var(--purple-color);
 }
 
 .price {
@@ -346,7 +354,7 @@ img {
     background-color: var(--blue-alt-color);
     width: 195px;
     border-radius: 4px;
-    color: var(--blue-color);
+    color: var(--blue-color) !important;
 }
 
 .sidenav__icon {
@@ -442,8 +450,7 @@ img {
 
 .moneyinfo__wrapper {
     display: flex;
-    justify-content: space-between;
-    /* margin-left: -20px; */
+    justify-content: space-evenly;
 }
 
 .moneyinfo__item {
@@ -574,6 +581,7 @@ img {
     border-radius: 28px;
     transition: 0.3s;
     margin-bottom: 10px;
+    cursor: pointer;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.06),
         0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
