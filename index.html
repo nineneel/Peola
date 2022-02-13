@@ -10,434 +10,563 @@
             href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
 
+        <!--========== BOOTSTRAP 5 ==========-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        />
+
         <!--========== CSS Style ==========-->
         <link rel="stylesheet" href="assets/css/styles.css" />
 
         <title>Peola - Pengelolah keuangan dan kegiatan kamu</title>
     </head>
     <body>
-        <!--========== Header ==========-->
-        <header class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <img
-                        src="assets/img/profile.png"
-                        alt=""
-                        class="header__img"
-                    />
-                    <span class="header__logo-name">Sujarnibos</span>
-                </div>
-                <div class="title__container">
-                    <h1 class="main__title">
-                        halo, <span class="title__bold">Sujarnibos</span>
-                    </h1>
-                </div>
-
-                <div class="header__toggle">
-                    <i class="uil uil-bars" id="header-toggle"></i>
-                </div>
-            </div>
-        </header>
-
-        <!--========== Nav ==========-->
-        <div class="nav" id="navbar">
-            <nav class="nav__container">
-                <div>
-                    <a href="#" class="nav__logo">
+        <!--========== Aside ==========-->
+        <aside class="sidenav" id="sidenav">
+            <nav class="sidenav__container">
+                <div class="sidenav__header">
+                    <a href="#" class="sidenav__header-container">
                         <img
                             src="assets/img/logo.png"
                             alt=""
-                            class="nav__icon-logo"
+                            class="sidenav__icon-logo"
                         />
-                        <span class="nav__name-title">Peola</span>
+                        <span class="sidenav__name-title">Peola</span>
                     </a>
+                </div>
 
-                    <div class="nav__list">
-                        <div class="nav__items">
-                            <h3 class="nav__subtitle">Utama</h3>
+                <div class="sidenav__main">
+                    <ul class="sidenav__list">
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Utama</h3>
 
-                            <a href="" class="nav__link nav__active">
-                                <i class="uil uil-chart-line nav__icon"></i>
-                                <span class="nav__name">Overview</span>
+                            <a href="" class="sidenav__link sidenav__active">
+                                <i class="uil uil-chart-line sidenav__icon"></i>
+                                <span class="sidenav__name">Overview</span>
                             </a>
-                        </div>
-                        <div class="nav__items">
-                            <h3 class="nav__subtitle">Keuangan</h3>
+                        </li>
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Keuangan</h3>
 
-                            <a href="" class="nav__link">
-                                <i class="uil uil-money-stack nav__icon"></i>
-                                <span class="nav__name">Saldo</span>
+                            <a href="" class="sidenav__link">
+                                <i
+                                    class="uil uil-money-stack sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Saldo</span>
                             </a>
-                            <a href="" class="nav__link">
-                                <i class="uil uil-money-withdraw nav__icon"></i>
-                                <span class="nav__name">Pemasukan</span>
+                            <a href="" class="sidenav__link">
+                                <i
+                                    class="uil uil-money-withdraw sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Pemasukan</span>
                             </a>
-                            <a href="" class="nav__link">
-                                <i class="uil uil-money-insert nav__icon"></i>
-                                <span class="nav__name">Pengeluaran</span>
+                            <a href="" class="sidenav__link">
+                                <i
+                                    class="uil uil-money-insert sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Pengeluaran</span>
                             </a>
-                        </div>
-                        <div class="nav__items">
-                            <h3 class="nav__subtitle">Tugas</h3>
+                        </li>
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Tugas</h3>
 
-                            <a href="" class="nav__link">
-                                <i class="uil uil-list-ul nav__icon"></i>
-                                <span class="nav__name">Kerjaan</span>
+                            <a href="" class="sidenav__link">
+                                <i class="uil uil-list-ul sidenav__icon"></i>
+                                <span class="sidenav__name">Kerjaan</span>
                             </a>
-                            <a href="" class="nav__link">
-                                <i class="uil uil-link-h nav__icon"></i>
-                                <span class="nav__name">Link</span>
+                            <a href="" class="sidenav__link">
+                                <i class="uil uil-link-h sidenav__icon"></i>
+                                <span class="sidenav__name">Link</span>
                             </a>
-                            <a href="" class="nav__link">
-                                <i class="uil uil-notes nav__icon"></i>
-                                <span class="nav__name">Notes</span>
+                            <a href="" class="sidenav__link">
+                                <i class="uil uil-notes sidenav__icon"></i>
+                                <span class="sidenav__name">Notes</span>
                             </a>
-                        </div>
-                        <div class="nav__items">
-                            <h3 class="nav__subtitle">Akun</h3>
+                        </li>
 
-                            <a href="" class="nav__link">
-                                <i class="uil uil-user-circle nav__icon"></i>
-                                <span class="nav__name">Profile</span>
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Akun</h3>
+
+                            <a href="" class="sidenav__link">
+                                <i
+                                    class="uil uil-user-circle sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Profile</span>
                             </a>
-                            <a href="" class="nav__link">
-                                <i class="uil uil-sign-out-alt nav__icon"></i>
-                                <span class="nav__name">Logout</span>
+                            <a href="" class="sidenav__link">
+                                <i
+                                    class="uil uil-sign-out-alt sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Logout</span>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-        </div>
+        </aside>
 
-        <!--========== Main ==========-->
+        <!--========== MAIN ==========-->
         <main class="main">
-            <section class="container dashboard" id="dashboard">
-                <div class="left">
-                    <!--========== Money Information ==========-->
-                    <div class="moneyinfo__container">
-                        <div class="moneyinfo__title-wrapper">
-                            <h3 class="title">
-                                Bulan, <span class="bold__title">February</span>
-                            </h3>
+            <!--========== Header ==========-->
+            <header class="header">
+                <div class="header__container">
+                    <div class="title__container">
+                        <h1 class="header__title">
+                            halo,
+                            <span class="header__title__bold">Masbro</span>
+                        </h1>
+                    </div>
+
+                    <div class="header__logo">
+                        <img
+                            src="assets/img/profile.png"
+                            alt=""
+                            class="header__img"
+                        />
+                        <span class="header__logo-name">Masbro</span>
+                    </div>
+
+                    <div class="header__toggle">
+                        <i class="uil uil-bars" id="header-toggle"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--========== Dashboard ==========-->
+            <section class="dashboard" id="dashboard">
+                <div class="content__container row w-100">
+                    <div class="col-lg-7 mb-4 p-0">
+                        <!--========== Money Information ==========-->
+                        <div class="moneyinfo__container">
+                            <div class="moneyinfo__title-wrapper">
+                                <h3 class="title">
+                                    Bulan,
+                                    <span class="bold__title">February</span>
+                                </h3>
+                            </div>
+
+                            <div class="moneyinfo__wrapper">
+                                <div class="moneyinfo__item">
+                                    <i
+                                        class="uil uil-money-stack moneyinfo__icon icon__blue"
+                                    ></i>
+                                    <h3
+                                        class="moneyinfo__total price font__blue"
+                                    >
+                                        Rp. 900.000
+                                    </h3>
+                                    <span class="moneyinfo__desc">Saldo</span>
+                                </div>
+                                <span class="moneyinfo__line"></span>
+
+                                <div class="moneyinfo__item">
+                                    <i
+                                        class="uil uil-money-withdraw moneyinfo__icon icon__green"
+                                    ></i>
+                                    <h3
+                                        class="moneyinfo__total price font__green"
+                                    >
+                                        Rp. 1.149.900
+                                    </h3>
+                                    <span class="moneyinfo__desc"
+                                        >Pemasukan</span
+                                    >
+                                </div>
+                                <span class="moneyinfo__line"></span>
+
+                                <div class="moneyinfo__item">
+                                    <i
+                                        class="uil uil-money-insert moneyinfo__icon icon__red"
+                                    ></i>
+                                    <h3
+                                        class="moneyinfo__total price font__red"
+                                    >
+                                        Rp. 1.149.900
+                                    </h3>
+                                    <span class="moneyinfo__desc">outcome</span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="moneyinfo__wrapper">
-                            <div class="moneyinfo__item">
-                                <i
-                                    class="uil uil-money-stack moneyinfo__icon icon__blue"
-                                ></i>
-                                <h3 class="moneyinfo__total price font__blue">
-                                    Rp. 9.000.000
+                        <!--========== Transaction Information ==========-->
+                        <div class="transaction__container">
+                            <div class="transaction__title-wrapper">
+                                <h3 class="title">
+                                    Transaksi,
+                                    <span class="bold__title">Saat ini</span>
                                 </h3>
-                                <span class="moneyinfo__desc">Saldo</span>
                             </div>
-                            <span class="moneyinfo__line"></span>
 
-                            <div class="moneyinfo__item">
-                                <i
-                                    class="uil uil-money-withdraw moneyinfo__icon icon__green"
-                                ></i>
-                                <h3 class="moneyinfo__total price font__green">
-                                    Rp. 10.149.900
-                                </h3>
-                                <span class="moneyinfo__desc">Pemasukan</span>
+                            <div class="transaction__wrapper">
+                                <div class="transaction__perday">
+                                    <div class="transaction__perday-header">
+                                        <span class="transaction__perday-date"
+                                            >13 Dec 2020</span
+                                        >
+                                        <span
+                                            class="transaction__perday-price price"
+                                            >Rp.24.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-insert transaction__icon icon__red"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Makanan
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Gorengan</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-insert transaction__icon icon__red"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Minuman
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Boba</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__green"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Gaji
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >OVO</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                </div>
                             </div>
-                            <span class="moneyinfo__line"></span>
 
-                            <div class="moneyinfo__item">
-                                <i
-                                    class="uil uil-money-insert moneyinfo__icon icon__red"
-                                ></i>
-                                <h3 class="moneyinfo__total price font__red">
-                                    Rp. 1.149.900
-                                </h3>
-                                <span class="moneyinfo__desc">outcome</span>
+                            <div class="transaction__wrapper">
+                                <div class="transaction__perday">
+                                    <div class="transaction__perday-header">
+                                        <span class="transaction__perday-date"
+                                            >13 Dec 2020</span
+                                        >
+                                        <span
+                                            class="transaction__perday-price price"
+                                            >Rp.24.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-insert transaction__icon icon__red"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Makanan
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Gorengan</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-insert transaction__icon icon__red"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Minuman
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Boba</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__green"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Gaji
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >OVO</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-5 px-4">
+                        <!--========== Todo Information ==========-->
+                        <div class="task__container">
+                            <div class="task__title-wrapper">
+                                <h3 class="title">
+                                    Tugas,
+                                    <span class="bold__title">Yang ada</span>
+                                </h3>
+                            </div>
 
-                    <!--========== Transaction Information ==========-->
-                    <div class="transaction__container">
-                        <div class="transaction__title-wrapper">
-                            <h3 class="title">
-                                Transaksi,
-                                <span class="bold__title">Saat ini</span>
-                            </h3>
-                        </div>
+                            <div class="task__item clickable">
+                                <div class="task__left">
+                                    <p class="task__name">Melakukan Sesuatu</p>
+                                    <div class="task__date-wrapper">
+                                        <i
+                                            class="uil uil-calender task__icon"
+                                        ></i>
+                                        <span class="task__date"
+                                            >12/02/2022</span
+                                        >
+                                    </div>
+                                    <div class="task__categories-wrapper">
+                                        <span class="task__categories do-first"
+                                            >Do first</span
+                                        >
+                                        <span
+                                            class="task__categories group__name"
+                                            >Kampus</span
+                                        >
+                                    </div>
+                                </div>
 
-                        <div class="transaction__wrapper">
-                            <div class="transaction__perday">
-                                <div class="transaction__perday-header">
-                                    <span class="transaction__perday-date"
-                                        >13 Dec 2020</span
-                                    >
-                                    <span
-                                        class="transaction__perday-price price"
-                                        >Rp.24.000</span
-                                    >
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
                                 </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
+                            </div>
+
+                            <div class="task__item clickable">
+                                <div class="task__left">
+                                    <p class="task__name">
+                                        Melakukan Sesuatu yang sangat ber
+                                    </p>
+                                    <div class="task__date-wrapper">
                                         <i
-                                            class="uil uil-money-insert transaction__icon icon__red"
+                                            class="uil uil-calender task__icon"
                                         ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Makanan
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >Gorengan</span
-                                            >
-                                        </div>
+                                        <span class="task__date"
+                                            >12/02/2022</span
+                                        >
                                     </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
-                                    >
+                                    <div class="task__categories-wrapper">
+                                        <span class="task__categories do-leter"
+                                            >Do Later</span
+                                        >
+                                        <span
+                                            class="task__categories group__name"
+                                            >Kampus</span
+                                        >
+                                    </div>
                                 </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
-                                        <i
-                                            class="uil uil-money-insert transaction__icon icon__red"
-                                        ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Minuman
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >Boba</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
-                                    >
-                                </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
-                                        <i
-                                            class="uil uil-money-withdraw transaction__icon icon__green"
-                                        ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Gaji
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >OVO</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
-                                    >
+
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="transaction__wrapper">
-                            <div class="transaction__perday">
-                                <div class="transaction__perday-header">
-                                    <span class="transaction__perday-date"
-                                        >13 Dec 2020</span
+                        <!--========== Link Information ==========-->
+                        <div class="task__container">
+                            <div class="task__title-wrapper">
+                                <h3 class="title">
+                                    Link,
+                                    <span class="bold__title"
+                                        >Yang disimpan</span
                                     >
-                                    <span
-                                        class="transaction__perday-price price"
-                                        >Rp.24.000</span
-                                    >
-                                </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
-                                        <i
-                                            class="uil uil-money-insert transaction__icon icon__red"
-                                        ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Makanan
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >Gorengan</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
+                                </h3>
+                            </div>
+
+                            <div class="task__item">
+                                <div class="task__left">
+                                    <p class="task__name">Link Folder AAP</p>
+                                    <span class="task__categories group__name"
+                                        >Kampus</span
                                     >
                                 </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
-                                        <i
-                                            class="uil uil-money-insert transaction__icon icon__red"
-                                        ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Minuman
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >Boba</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
+
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
+                                </div>
+                            </div>
+
+                            <div class="task__item">
+                                <div class="task__left">
+                                    <p class="task__name">Link Folder AAP</p>
+                                    <span class="task__categories group__name"
+                                        >Kampus</span
                                     >
                                 </div>
-                                <div class="transaction__item">
-                                    <div class="transaction__item-title">
-                                        <i
-                                            class="uil uil-money-withdraw transaction__icon icon__green"
-                                        ></i>
-                                        <div>
-                                            <p class="transaction__categories">
-                                                Gaji
-                                            </p>
-                                            <span class="transaction__desc"
-                                                >OVO</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <span class="transaction__item-price price"
-                                        >Rp.12.000</span
+
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--========== Notes Information ==========-->
+                        <div class="task__container">
+                            <div class="task__title-wrapper">
+                                <h3 class="title">
+                                    Notes,
+                                    <span class="bold__title"
+                                        >Yang disimpan</span
                                     >
+                                </h3>
+                            </div>
+
+                            <div class="task__item">
+                                <div class="task__left">
+                                    <p class="task__name">Link Folder AAP</p>
+                                    <span class="task__categories group__name"
+                                        >Kampus</span
+                                    >
+                                </div>
+
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
+                                </div>
+                            </div>
+
+                            <div class="task__item">
+                                <div class="task__left">
+                                    <p class="task__name">Link Folder AAP</p>
+                                    <span class="task__categories group__name"
+                                        >Kampus</span
+                                    >
+                                </div>
+
+                                <div class="task__right">
+                                    <i
+                                        class="uil uil-check-circle task__check"
+                                    ></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="right">
-                    <!--========== Todo Information ==========-->
-                    <div class="todo__container clickable">
-                        <div class="todo__title-wrapper">
-                            <h3 class="title">
-                                Tugas,
-                                <span class="bold__title">Yang ada</span>
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <div class="modal__title-wrapper">
+                            <h3 class="title small__title">
+                                Tampilkan,
+                                <span class="bold__title small__title"
+                                    >Kerjaan</span
+                                >
                             </h3>
                         </div>
-
-                        <div class="todo__item">
-                            <div class="todo__left">
-                                <p class="todo__name">Melakukan Sesuatu</p>
-                                <div class="todo__date-wrapper">
-                                    <i class="uil uil-calender todo__icon"></i>
-                                    <span class="todo__date">12/02/2022</span>
-                                </div>
-                                <div class="todo__categories-wrapper">
-                                    <span class="todo__categories do-first"
-                                        >Do first</span
-                                    >
-                                    <span class="todo__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-                            </div>
-
-                            <div class="todo__right">
-                                <i class="uil uil-check-circle todo__check"></i>
-                            </div>
-                        </div>
-
-                        <div class="todo__item">
-                            <div class="todo__left">
-                                <p class="todo__name">
-                                    Melakukan Sesuatu yang sangat ber
-                                </p>
-                                <div class="todo__date-wrapper">
-                                    <i class="uil uil-calender todo__icon"></i>
-                                    <span class="todo__date">12/02/2022</span>
-                                </div>
-                                <div class="todo__categories-wrapper">
-                                    <span class="todo__categories do-leter"
-                                        >Do Later</span
-                                    >
-                                    <span class="todo__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-                            </div>
-
-                            <div class="todo__right">
-                                <i class="uil uil-check-circle todo__check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--========== Link Information ==========-->
-                    <div class="link__container clickable">
-                        <div class="link__title-wrapper">
-                            <h3 class="title">
-                                Link,
-                                <span class="title__bold">Yang tersimpan</span>
-                            </h3>
-                        </div>
-
-                        <div class="link__item">
-                            <div class="link__left">
-                                <p class="link__name">Link Folder AAP</p>
-                                <span class="link__categories group__name"
-                                    >Kampus</span
-                                >
-                            </div>
-
-                            <div class="link__right">
-                                <i class="uil uil-check-circle link__check"></i>
-                            </div>
-                        </div>
-
-                        <div class="link__item">
-                            <div class="link__left">
-                                <p class="link__name">Link Folder AAP</p>
-                                <span class="link__categories group__name"
-                                    >Kampus</span
-                                >
-                            </div>
-
-                            <div class="link__right">
-                                <i class="uil uil-check-circle link__check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--========== Notes Information ==========-->
-                    <div class="notes__container clickable">
-                        <div class="notes__title-wrapper">
-                            <h3 class="title">
-                                Notes,
-                                <span class="title__bold">Yang tersimpan</span>
-                            </h3>
-                        </div>
-
-                        <div class="notes__item">
-                            <div class="notes__left">
-                                <p class="notes__name">notes Folder AAP</p>
-                                <span class="notes__categories group__name"
-                                    >Kampus</span
-                                >
-                            </div>
-
-                            <div class="notes__right">
+                        <div class="modal__items">
+                            <div class="modal__item">
                                 <i
-                                    class="uil uil-check-circle notes__check"
+                                    class="uil uil-clipboard-notes modal-icon"
                                 ></i>
+                                <p class="modal__text">Judul Kerjaan</p>
+                            </div>
+                            <div class="modal__item">
+                                <i class="uil uil-gold modal-icon"></i>
+                                <p class="modal__text">Do first</p>
+                            </div>
+                            <div class="modal__item">
+                                <i class="uil uil-calendar-alt modal-icon"></i>
+                                <p class="modal__text">20/02/2022</p>
+                            </div>
+                            <div class="modal__item">
+                                <i class="uil uil-layer-group modal-icon"></i>
+                                <p class="modal__text">Kampus</p>
+                            </div>
+                            <div class="modal__item">
+                                <i class="uil uil-notes modal-icon"></i>
+                                <p class="modal__text">-</p>
                             </div>
                         </div>
-
-                        <div class="notes__item">
-                            <div class="notes__left">
-                                <p class="notes__name">notes Folder AAP</p>
-                                <span class="notes__categories group__name"
-                                    >Kampus</span
-                                >
+                        <div class="modal__button-wrapper">
+                            <div href="" class="btn btn-alt-blue modal__close">
+                                Keluar
                             </div>
-
-                            <div class="notes__right">
-                                <i
-                                    class="uil uil-check-circle notes__check"
-                                ></i>
-                            </div>
+                            <div href="" class="btn btn-blue">Selesaikan</div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!--========== FOOTER ==========-->
+            <footer class="footer">
+                <div class="footer__container">
+                    <p class="footer__text">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        , made with love by
+                        <span class="title__bold">C Group</span>
+                    </p>
+                </div>
+            </footer>
         </main>
 
         <!--========== MAIN JS ==========-->
