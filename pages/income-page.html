@@ -19,6 +19,7 @@
         <!--========== CSS Style ==========-->
         <link rel="stylesheet" href="../assets/css/styles.css" />
         <link rel="stylesheet" href="../assets/css/balance-style.css" />
+        <link rel="stylesheet" href="../assets/css/income.css" />
 
         <title>Pemasukan | Peola - Pengelolah keuangan dan kegiatan kamu</title>
     </head>
@@ -169,63 +170,233 @@
                             <div class="moneyinfo__wrapper">
                                 <div class="moneyinfo__item">
                                     <i
-                                        class="uil uil-money-stack moneyinfo__icon icon__blue"
+                                        class="uil uil-money-withdraw moneyinfo__icon icon__green"
                                     ></i>
                                     <h3
-                                        class="moneyinfo__total price font__blue"
+                                        class="moneyinfo__total price font__green"
                                     >
-                                        Rp. 900.000
+                                        Rp. 520.000
                                     </h3>
                                     <span class="moneyinfo__desc"
-                                        >Total Saldo</span
+                                        >Pemasukan</span
                                     >
                                 </div>
                             </div>
                         </div>
 
-                        <!--========== Saldo ==========-->
-                        <div class="balance__container">
-                            <div class="balance__item font__red">
-                                <div>
-                                    <h3 class="balance__title">Tunai</h3>
-                                    <span class="price">Rp. 10.000</span>
+                        <!--========== Add Button ==========-->
+                        <div class="btn__container">
+                            <a
+                                href="add-income-page.html"
+                                class="btn btn-green"
+                            >
+                                <i class="uil uil-plus btn-icon me-2"></i>Tambah
+                                Pemasukan
+                            </a>
+                        </div>
+
+                        <!--========== Transaction Info ==========-->
+                        <div class="transaction__container">
+                            <div class="transaction__title-wrapper">
+                                <h3 class="title">
+                                    Pemasukan,
+                                    <span class="bold__title">Bulan ini</span>
+                                </h3>
+                                <div class="transaction__time">
+                                    <button
+                                        class="btn btn-green small-btn date-picker__btn"
+                                    >
+                                        Bulan ini<i
+                                            class="uil uil-angle-down ms-1 btn-icon"
+                                        ></i>
+                                    </button>
+                                    <div class="transaction__time-wrapper">
+                                        <form
+                                            action=""
+                                            class="transaction__time-date"
+                                            id="range__date-picker"
+                                        >
+                                            <div class="list__item">
+                                                <div
+                                                    class="input__item"
+                                                    style="width: 100%"
+                                                >
+                                                    <label
+                                                        for="date-input"
+                                                        class="input__item-label"
+                                                    >
+                                                        Dari:
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-list list__text"
+                                                        name="dari"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="list__item">
+                                                <div
+                                                    class="input__item"
+                                                    style="width: 100%"
+                                                >
+                                                    <label
+                                                        for="date-input"
+                                                        class="input__item-label"
+                                                        >Sampai:
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-list list__text"
+                                                        name="hingga"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="submit"
+                                                class="btn btn-green small-btn"
+                                            />
+                                        </form>
+                                    </div>
                                 </div>
-                                <i
-                                    class="uil uil-money-stack moneyinfo__icon icon__red"
-                                ></i>
                             </div>
-                            <div class="balance__item font__blue">
-                                <div>
-                                    <h3 class="balance__title">Bank BRI</h3>
-                                    <span class="price">Rp. 10.000</span>
+
+                            <div class="transaction__wrapper">
+                                <div class="transaction__perday">
+                                    <div class="transaction__perday-header">
+                                        <span class="transaction__perday-date"
+                                            >13 Dec 2020</span
+                                        >
+                                        <span
+                                            class="transaction__perday-price price"
+                                            >Rp.24.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__income"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Pemberian
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Bank BRI</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__income"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Pemberian
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Tunai</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__income"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Gaji
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >OVO</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
                                 </div>
-                                <i
-                                    class="uil uil-money-stack moneyinfo__icon icon__blue"
-                                ></i>
                             </div>
-                            <div class="balance__item font__purple">
-                                <div>
-                                    <h3 class="balance__title">OVO</h3>
-                                    <span class="price">Rp. 10.000</span>
+
+                            <div class="transaction__wrapper">
+                                <div class="transaction__perday">
+                                    <div class="transaction__perday-header">
+                                        <span class="transaction__perday-date"
+                                            >13 Dec 2020</span
+                                        >
+                                        <span
+                                            class="transaction__perday-price price"
+                                            >Rp.24.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__income"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Pemberian
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Bank BRI</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
+                                    <div class="transaction__item">
+                                        <div class="transaction__item-title">
+                                            <i
+                                                class="uil uil-money-withdraw transaction__icon icon__income"
+                                            ></i>
+                                            <div>
+                                                <p
+                                                    class="transaction__categories"
+                                                >
+                                                    Pemberian
+                                                </p>
+                                                <span class="transaction__desc"
+                                                    >Tunai</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="transaction__item-price price"
+                                            >Rp.12.000</span
+                                        >
+                                    </div>
                                 </div>
-                                <i
-                                    class="uil uil-money-stack moneyinfo__icon icon__purple"
-                                ></i>
-                            </div>
-                            <div class="balance__item font__green">
-                                <div>
-                                    <h3 class="balance__title">Gopay</h3>
-                                    <span class="price">Rp. 10.000</span>
-                                </div>
-                                <i
-                                    class="uil uil-money-stack moneyinfo__icon icon__green"
-                                ></i>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="modal" id="modal">
+                <!-- <div class="modal" id="modal">
                     <div class="modal__content">
                         <div class="modal__title-wrapper">
                             <h3 class="title small__title">
@@ -266,7 +437,7 @@
                             <div href="" class="btn btn-blue">Selesaikan</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <!--========== FOOTER ==========-->

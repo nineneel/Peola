@@ -1,0 +1,89 @@
+.moneyinfo__container {
+    margin-bottom: var(--mb-2);
+}
+
+.btn__container {
+    margin-bottom: var(--mb-2);
+}
+
+.input__container {
+    margin-bottom: var(--mb-2);
+    padding: 30px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06),
+        0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.dropdown-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.select-form {
+    margin-left: -4px;
+}
+
+.input__item {
+    display: flex;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+}
+
+.form-list select {
+    width: 100%;
+}
+
+.form-list option {
+}
+
+.form-list {
+    border-width: 0;
+    color: var(--text-color);
+    width: 100%;
+}
+
+/* dropdown menu */
+.list__item .dropdown {
+    position: relative;
+}
+
+::placeholder {
+    color: var(--text-grey-color);
+}
+
+.form-list:focus {
+    outline: none;
+}
+
+.transaction__time {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.input__item-label {
+    margin-right: 10px;
+    font-weight: var(--font-bold);
+}
+
+.transaction__time-date {
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+    /* left: calc(100% + 1rem); */
+    top: 100%;
+    /* left: 10px; */
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    padding: 15px 15px 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06),
+        0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.show__date-picker {
+    display: block;
+}

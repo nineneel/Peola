@@ -29,7 +29,7 @@
     --red-alt-hover-color: hsl(var(--red-hue-color), 91%, 91%);
     --green-hover-color: hsl(var(--green-hue-color), 60%, 25%);
     --green-color: hsl(var(--green-hue-color), 44%, 42%);
-    --green-alt-color: hsl(var(--green-hue-color), 53%, 91%);
+    --green-alt-color: hsl(var(--green-hue-color), 100%, 97%);
     --green-alt-hover-color: hsl(var(--green-hue-color), 91%, 91%);
     --purple-color: hsl(var(--purple-hue-color), 40%, 44%);
     --purple-hover-color: hsl(var(--purple-hue-color), 60%, 25%);
@@ -124,6 +124,10 @@ h4 {
     font-weight: var(--font-regular);
 }
 
+p {
+    margin-bottom: 0;
+}
+
 ul {
     list-style: none;
 }
@@ -140,6 +144,11 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -201,15 +210,35 @@ img {
 }
 
 .btn {
-    display: inline;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
     padding: 8px 30px;
     border-radius: 28px;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
-    margin-left: 8px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.btn-icon {
+    font-size: 1.75rem;
+    margin: -10px -5px;
+}
+
+.small-btn {
+    font-size: var(--smaller-font-size);
+    padding: 3px 15px;
+}
+
+.icon__outcome {
+    color: var(--red-color);
+}
+
+.icon__income {
+    color: var(--green-color);
 }
 
 .btn-blue {
@@ -341,6 +370,7 @@ img {
 .sidenav__link {
     display: flex;
     align-items: center;
+    margin: 1.5px 0;
 }
 
 .sidenav__link:hover {
@@ -454,7 +484,7 @@ img {
 }
 
 .moneyinfo__item {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -499,7 +529,10 @@ img {
 }
 
 .transaction__title-wrapper {
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-1-5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .transaction__perday {
@@ -544,7 +577,7 @@ img {
 }
 
 .transaction__item-title div {
-    line-height: 2px;
+    line-height: 1.25rem;
 }
 
 .transaction__categories {
@@ -684,13 +717,13 @@ img {
     margin-bottom: var(--mb-1-5);
 }
 
-.modal__items {
+.list__items {
     display: flex;
     flex-direction: column;
     margin-bottom: var(--mb-1);
 }
 
-.modal__item {
+.list__item {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-0-75);
@@ -698,15 +731,14 @@ img {
     font-size: var(--small-font-size);
 }
 
-.modal__button-wrapper {
+.list__button-wrapper {
     display: flex;
     justify-content: flex-end;
 }
 
-.modal-icon {
+.list-icon {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: var(--blue-color);
 }
 
 /* show modal */
@@ -777,10 +809,6 @@ img {
         padding: 20px;
     }
 
-    .moneyinfo__wrapper {
-        margin: 0;
-    }
-
     .moneyinfo__total {
         font-size: var(--normal-font-size);
     }
@@ -814,5 +842,15 @@ img {
     .modal__content {
         margin: 1rem 2rem;
         min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .moneyinfo__wrapper {
+        flex-direction: column;
+    }
+
+    .moneyinfo__item {
+        margin-bottom: var(--mb-0-5);
     }
 }

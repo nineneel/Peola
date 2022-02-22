@@ -12,10 +12,11 @@ function menuShow(id, className) {
 }
 
 const toggleMenu = document.querySelector(".header__toggle");
-
-toggleMenu.addEventListener("click", () => {
-    menuShow("sidenav", "show-menu");
-});
+if (toggleMenu !== null) {
+    toggleMenu.addEventListener("click", () => {
+        menuShow("sidenav", "show-menu");
+    });
+}
 
 /*===== MODAL SHOW =====*/
 function modalShow(id, className) {
@@ -30,15 +31,28 @@ function modalShow(id, className) {
 
 const todoItems = document.querySelectorAll(".task__item");
 
-todoItems.forEach((todoItem) => {
-    todoItem.addEventListener("click", () => {
-        menuShow("modal", "show-modal");
+if (todoItems !== null) {
+    todoItems.forEach((todoItem) => {
+        todoItem.addEventListener("click", () => {
+            menuShow("modal", "show-modal");
+        });
     });
-});
+}
 
 // close modal button
-const modalCloseBtn = document.querySelector(".modal__close");
+const modalCloseBtn = document.querySelector(".list__close");
 
-modalCloseBtn.addEventListener("click", () => {
-    menuShow("modal", "show-modal");
-});
+if (modalCloseBtn !== null) {
+    modalCloseBtn.addEventListener("click", () => {
+        menuShow("modal", "show-modal");
+    });
+}
+
+// show sort date picker income
+const datePickerBtn = document.querySelector(".date-picker__btn");
+
+if (datePickerBtn !== null) {
+    datePickerBtn.addEventListener("click", () => {
+        menuShow("range__date-picker", "show__date-picker");
+    });
+}

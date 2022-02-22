@@ -17,9 +17,14 @@
         />
 
         <!--========== CSS Style ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/balance-style.css" />
+        <link rel="stylesheet" href="../assets/css/income.css" />
+        <link rel="stylesheet" href="../assets/css/outcome.css" />
 
-        <title>Peola - Pengelolah keuangan dan kegiatan kamu</title>
+        <title>
+            Pengeluaran | Peola - Pengelolah keuangan dan kegiatan kamu
+        </title>
     </head>
     <body>
         <!--========== Aside ==========-->
@@ -28,7 +33,7 @@
                 <div class="sidenav__header">
                     <a href="#" class="sidenav__header-container">
                         <img
-                            src="assets/img/logo.png"
+                            src="../assets/img/logo.png"
                             alt=""
                             class="sidenav__icon-logo"
                         />
@@ -41,10 +46,7 @@
                         <li class="sidenav__items">
                             <h3 class="sidenav__subtitle">Utama</h3>
 
-                            <a
-                                href="../index.html"
-                                class="sidenav__link sidenav__active"
-                            >
+                            <a href="../index.html" class="sidenav__link">
                                 <i class="uil uil-chart-line sidenav__icon"></i>
                                 <span class="sidenav__name">Overview</span>
                             </a>
@@ -68,11 +70,11 @@
                                 <i
                                     class="uil uil-money-withdraw sidenav__icon"
                                 ></i>
-                                <span class="sidenav__name">Pemasukan</span>
+                                <span class="sidenav__name">Pengeluaran</span>
                             </a>
                             <a
                                 href="../pages/outcome-page.html"
-                                class="sidenav__link"
+                                class="sidenav__link sidenav__active"
                             >
                                 <i
                                     class="uil uil-money-insert sidenav__icon"
@@ -105,7 +107,6 @@
                                 <span class="sidenav__name">Notes</span>
                             </a>
                         </li>
-
                         <li class="sidenav__items">
                             <h3 class="sidenav__subtitle">Akun</h3>
 
@@ -137,14 +138,13 @@
                 <div class="header__container">
                     <div class="title__container">
                         <h1 class="header__title">
-                            halo,
-                            <span class="header__title__bold">Masbro</span>
+                            <span class="header__title__bold">Pengeluaran</span>
                         </h1>
                     </div>
 
                     <div class="header__logo">
                         <img
-                            src="assets/img/profile.png"
+                            src="../assets/img/profile.png"
                             alt=""
                             class="header__img"
                         />
@@ -160,45 +160,17 @@
             <!--========== Dashboard ==========-->
             <section class="dashboard" id="dashboard">
                 <div class="content__container row w-100">
-                    <div class="col-lg-7 mb-4 p-0">
+                    <div class="col-lg-8 mb-4 p-0">
                         <!--========== Money Information ==========-->
-                        <div class="moneyinfo__container">
+                        <div class="moneyinfo__container col-lg-6">
                             <div class="moneyinfo__title-wrapper">
                                 <h3 class="title">
-                                    Bulan,
-                                    <span class="bold__title">February</span>
+                                    Pengeluaran,
+                                    <span class="bold__title">Bulan ini</span>
                                 </h3>
                             </div>
 
                             <div class="moneyinfo__wrapper">
-                                <div class="moneyinfo__item">
-                                    <i
-                                        class="uil uil-money-stack moneyinfo__icon icon__blue"
-                                    ></i>
-                                    <h3
-                                        class="moneyinfo__total price font__blue"
-                                    >
-                                        Rp. 900.000
-                                    </h3>
-                                    <span class="moneyinfo__desc">Saldo</span>
-                                </div>
-                                <span class="moneyinfo__line"></span>
-
-                                <div class="moneyinfo__item">
-                                    <i
-                                        class="uil uil-money-withdraw moneyinfo__icon icon__green"
-                                    ></i>
-                                    <h3
-                                        class="moneyinfo__total price font__green"
-                                    >
-                                        Rp. 1.149.900
-                                    </h3>
-                                    <span class="moneyinfo__desc"
-                                        >Pemasukan</span
-                                    >
-                                </div>
-                                <span class="moneyinfo__line"></span>
-
                                 <div class="moneyinfo__item">
                                     <i
                                         class="uil uil-money-insert moneyinfo__icon icon__red"
@@ -206,7 +178,7 @@
                                     <h3
                                         class="moneyinfo__total price font__red"
                                     >
-                                        Rp. 1.149.900
+                                        Rp. 520.000
                                     </h3>
                                     <span class="moneyinfo__desc"
                                         >Pengeluaran</span
@@ -215,13 +187,77 @@
                             </div>
                         </div>
 
-                        <!--========== Transaction Information ==========-->
+                        <!--========== Add Button ==========-->
+                        <div class="btn__container">
+                            <a href="add-outcome-page.html" class="btn btn-red">
+                                <i class="uil uil-plus btn-icon me-2"></i>Tambah
+                                Pengeluaran
+                            </a>
+                        </div>
+
+                        <!--========== Transaction Info ==========-->
                         <div class="transaction__container">
                             <div class="transaction__title-wrapper">
                                 <h3 class="title">
-                                    Transaksi,
-                                    <span class="bold__title">Saat ini</span>
+                                    Pengeluaran,
+                                    <span class="bold__title">Bulan ini</span>
                                 </h3>
+                                <div class="transaction__time">
+                                    <button
+                                        class="btn btn-red small-btn date-picker__btn"
+                                    >
+                                        Bulan ini<i
+                                            class="uil uil-angle-down ms-1 btn-icon"
+                                        ></i>
+                                    </button>
+                                    <div class="transaction__time-wrapper">
+                                        <form
+                                            action=""
+                                            class="transaction__time-date"
+                                            id="range__date-picker"
+                                        >
+                                            <div class="list__item">
+                                                <div
+                                                    class="input__item"
+                                                    style="width: 100%"
+                                                >
+                                                    <label
+                                                        for="date-input"
+                                                        class="input__item-label"
+                                                    >
+                                                        Dari:
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-list list__text"
+                                                        name="dari"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="list__item">
+                                                <div
+                                                    class="input__item"
+                                                    style="width: 100%"
+                                                >
+                                                    <label
+                                                        for="date-input"
+                                                        class="input__item-label"
+                                                        >Sampai:
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-list list__text"
+                                                        name="hingga"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="submit"
+                                                class="btn btn-red small-btn"
+                                            />
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="transaction__wrapper">
@@ -238,16 +274,16 @@
                                     <div class="transaction__item">
                                         <div class="transaction__item-title">
                                             <i
-                                                class="uil uil-money-insert transaction__icon icon__red"
+                                                class="uil uil-money-insert transaction__icon icon__outcome"
                                             ></i>
                                             <div>
                                                 <p
                                                     class="transaction__categories"
                                                 >
-                                                    Makanan
+                                                    Pemberian
                                                 </p>
                                                 <span class="transaction__desc"
-                                                    >Gorengan</span
+                                                    >Bank BRI</span
                                                 >
                                             </div>
                                         </div>
@@ -259,16 +295,16 @@
                                     <div class="transaction__item">
                                         <div class="transaction__item-title">
                                             <i
-                                                class="uil uil-money-insert transaction__icon icon__red"
+                                                class="uil uil-money-insert transaction__icon icon__outcome"
                                             ></i>
                                             <div>
                                                 <p
                                                     class="transaction__categories"
                                                 >
-                                                    Minuman
+                                                    Pemberian
                                                 </p>
                                                 <span class="transaction__desc"
-                                                    >Boba</span
+                                                    >Tunai</span
                                                 >
                                             </div>
                                         </div>
@@ -280,7 +316,7 @@
                                     <div class="transaction__item">
                                         <div class="transaction__item-title">
                                             <i
-                                                class="uil uil-money-withdraw transaction__icon icon__green"
+                                                class="uil uil-money-insert transaction__icon icon__outcome"
                                             ></i>
                                             <div>
                                                 <p
@@ -315,16 +351,16 @@
                                     <div class="transaction__item">
                                         <div class="transaction__item-title">
                                             <i
-                                                class="uil uil-money-insert transaction__icon icon__red"
+                                                class="uil uil-money-insert transaction__icon icon__outcome"
                                             ></i>
                                             <div>
                                                 <p
                                                     class="transaction__categories"
                                                 >
-                                                    Makanan
+                                                    Pemberian
                                                 </p>
                                                 <span class="transaction__desc"
-                                                    >Gorengan</span
+                                                    >Bank BRI</span
                                                 >
                                             </div>
                                         </div>
@@ -336,16 +372,16 @@
                                     <div class="transaction__item">
                                         <div class="transaction__item-title">
                                             <i
-                                                class="uil uil-money-insert transaction__icon icon__red"
+                                                class="uil uil-money-insert transaction__icon icon__outcome"
                                             ></i>
                                             <div>
                                                 <p
                                                     class="transaction__categories"
                                                 >
-                                                    Minuman
+                                                    Pemberian
                                                 </p>
                                                 <span class="transaction__desc"
-                                                    >Boba</span
+                                                    >Tunai</span
                                                 >
                                             </div>
                                         </div>
@@ -354,189 +390,13 @@
                                             >Rp.12.000</span
                                         >
                                     </div>
-                                    <div class="transaction__item">
-                                        <div class="transaction__item-title">
-                                            <i
-                                                class="uil uil-money-withdraw transaction__icon icon__green"
-                                            ></i>
-                                            <div>
-                                                <p
-                                                    class="transaction__categories"
-                                                >
-                                                    Gaji
-                                                </p>
-                                                <span class="transaction__desc"
-                                                    >OVO</span
-                                                >
-                                            </div>
-                                        </div>
-                                        <span
-                                            class="transaction__item-price price"
-                                            >Rp.12.000</span
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-4">
-                        <!--========== Todo Information ==========-->
-                        <div class="task__container">
-                            <div class="task__title-wrapper">
-                                <h3 class="title">
-                                    Tugas,
-                                    <span class="bold__title">Yang ada</span>
-                                </h3>
-                            </div>
-
-                            <div class="task__item clickable">
-                                <div class="task__left">
-                                    <p class="task__name">Melakukan Sesuatu</p>
-                                    <div class="task__date-wrapper">
-                                        <i
-                                            class="uil uil-calender task__icon"
-                                        ></i>
-                                        <span class="task__date"
-                                            >12/02/2022</span
-                                        >
-                                    </div>
-                                    <div class="task__categories-wrapper">
-                                        <span class="task__categories do-first"
-                                            >Do first</span
-                                        >
-                                        <span
-                                            class="task__categories group__name"
-                                            >Kampus</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
-                                </div>
-                            </div>
-
-                            <div class="task__item clickable">
-                                <div class="task__left">
-                                    <p class="task__name">
-                                        Melakukan Sesuatu yang sangat ber
-                                    </p>
-                                    <div class="task__date-wrapper">
-                                        <i
-                                            class="uil uil-calender task__icon"
-                                        ></i>
-                                        <span class="task__date"
-                                            >12/02/2022</span
-                                        >
-                                    </div>
-                                    <div class="task__categories-wrapper">
-                                        <span class="task__categories do-leter"
-                                            >Do Later</span
-                                        >
-                                        <span
-                                            class="task__categories group__name"
-                                            >Kampus</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--========== Link Information ==========-->
-                        <div class="task__container">
-                            <div class="task__title-wrapper">
-                                <h3 class="title">
-                                    Link,
-                                    <span class="bold__title"
-                                        >Yang disimpan</span
-                                    >
-                                </h3>
-                            </div>
-
-                            <div class="task__item">
-                                <div class="task__left">
-                                    <p class="task__name">Link Folder AAP</p>
-                                    <span class="task__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
-                                </div>
-                            </div>
-
-                            <div class="task__item">
-                                <div class="task__left">
-                                    <p class="task__name">Link Folder AAP</p>
-                                    <span class="task__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--========== Notes Information ==========-->
-                        <div class="task__container">
-                            <div class="task__title-wrapper">
-                                <h3 class="title">
-                                    Notes,
-                                    <span class="bold__title"
-                                        >Yang disimpan</span
-                                    >
-                                </h3>
-                            </div>
-
-                            <div class="task__item">
-                                <div class="task__left">
-                                    <p class="task__name">Link Folder AAP</p>
-                                    <span class="task__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
-                                </div>
-                            </div>
-
-                            <div class="task__item">
-                                <div class="task__left">
-                                    <p class="task__name">Link Folder AAP</p>
-                                    <span class="task__categories group__name"
-                                        >Kampus</span
-                                    >
-                                </div>
-
-                                <div class="task__right">
-                                    <i
-                                        class="uil uil-check-circle task__check"
-                                    ></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="modal" id="modal">
+                <!-- <div class="modal" id="modal">
                     <div class="modal__content">
                         <div class="modal__title-wrapper">
                             <h3 class="title small__title">
@@ -546,41 +406,38 @@
                                 >
                             </h3>
                         </div>
-                        <div class="list__items">
-                            <div class="list__item">
+                        <div class="modal__items">
+                            <div class="modal__item">
                                 <i
-                                    class="uil uil-clipboard-notes list-icon"
+                                    class="uil uil-clipboard-notes modal-icon"
                                 ></i>
-                                <p class="list__desc">Judul Kerjaan</p>
+                                <p class="modal__text">Judul Kerjaan</p>
                             </div>
-                            <div class="list__item">
-                                <i class="uil uil-gold list-icon"></i>
-                                <p class="list__desc">Do first</p>
+                            <div class="modal__item">
+                                <i class="uil uil-gold modal-icon"></i>
+                                <p class="modal__text">Do first</p>
                             </div>
-                            <div class="list__item">
-                                <i class="uil uil-calendar-alt list-icon"></i>
-                                <p class="list__desc">20/02/2022</p>
+                            <div class="modal__item">
+                                <i class="uil uil-calendar-alt modal-icon"></i>
+                                <p class="modal__text">20/02/2022</p>
                             </div>
-                            <div class="list__item">
-                                <i class="uil uil-layer-group list-icon"></i>
-                                <p class="list__desc">Kampus</p>
+                            <div class="modal__item">
+                                <i class="uil uil-layer-group modal-icon"></i>
+                                <p class="modal__text">Kampus</p>
                             </div>
-                            <div class="list__item">
-                                <i class="uil uil-notes list-icon"></i>
-                                <p class="list__desc">-</p>
+                            <div class="modal__item">
+                                <i class="uil uil-notes modal-icon"></i>
+                                <p class="modal__text">-</p>
                             </div>
                         </div>
-                        <div class="list__button-wrapper">
-                            <div
-                                href=""
-                                class="btn btn-alt-blue list__close me-2"
-                            >
+                        <div class="modal__button-wrapper">
+                            <div href="" class="btn btn-alt-blue modal__close">
                                 Keluar
                             </div>
                             <div href="" class="btn btn-blue">Selesaikan</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <!--========== FOOTER ==========-->
@@ -599,6 +456,6 @@
         </main>
 
         <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
+        <script src="../assets/js/main.js"></script>
     </body>
 </html>
