@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--========== Unicons ==========-->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+
+        <!--========== BOOTSTRAP 5 ==========-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        />
+
+        <!--========== CSS Style ==========-->
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/balance-style.css" />
+        <link rel="stylesheet" href="../assets/css/income.css" />
+        <link rel="stylesheet" href="../assets/css/link.css" />
+
+        <title>Profile | Peola - Pengelolah keuangan dan kegiatan kamu</title>
+    </head>
+    <body>
+        <!--========== Aside ==========-->
+        <aside class="sidenav" id="sidenav">
+            <nav class="sidenav__container">
+                <div class="sidenav__header">
+                    <a href="#" class="sidenav__header-container">
+                        <img
+                            src="../assets/img/logo.png"
+                            alt=""
+                            class="sidenav__icon-logo"
+                        />
+                        <span class="sidenav__name-title">Peola</span>
+                    </a>
+                </div>
+
+                <div class="sidenav__main">
+                    <ul class="sidenav__list">
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Utama</h3>
+
+                            <a href="../index.html" class="sidenav__link">
+                                <i class="uil uil-chart-line sidenav__icon"></i>
+                                <span class="sidenav__name">Overview</span>
+                            </a>
+                        </li>
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Keuangan</h3>
+
+                            <a
+                                href="../pages/balance-page.html"
+                                class="sidenav__link"
+                            >
+                                <i
+                                    class="uil uil-money-stack sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Saldo</span>
+                            </a>
+                            <a
+                                href="../pages/income-page.html"
+                                class="sidenav__link"
+                            >
+                                <i
+                                    class="uil uil-money-withdraw sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Pemasukan</span>
+                            </a>
+                            <a
+                                href="../pages/outcome-page.html"
+                                class="sidenav__link"
+                            >
+                                <i
+                                    class="uil uil-money-insert sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Pengeluaran</span>
+                            </a>
+                        </li>
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Tugas</h3>
+
+                            <a
+                                href="../pages/task-page.html"
+                                class="sidenav__link"
+                            >
+                                <i class="uil uil-list-ul sidenav__icon"></i>
+                                <span class="sidenav__name">Kerjaan</span>
+                            </a>
+                            <a
+                                href="../pages/link-page.html"
+                                class="sidenav__link"
+                            >
+                                <i class="uil uil-link-h sidenav__icon"></i>
+                                <span class="sidenav__name">Link</span>
+                            </a>
+                            <a
+                                href="../pages/notes-page.html"
+                                class="sidenav__link"
+                            >
+                                <i class="uil uil-notes sidenav__icon"></i>
+                                <span class="sidenav__name">Notes</span>
+                            </a>
+                        </li>
+
+                        <li class="sidenav__items">
+                            <h3 class="sidenav__subtitle">Akun</h3>
+
+                            <a
+                                href="../pages/profile-page.html"
+                                class="sidenav__link sidenav__active"
+                            >
+                                <i
+                                    class="uil uil-user-circle sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Profile</span>
+                            </a>
+                            <a href="#" class="sidenav__link">
+                                <i
+                                    class="uil uil-sign-out-alt sidenav__icon"
+                                ></i>
+                                <span class="sidenav__name">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!--========== MAIN ==========-->
+        <main class="main">
+            <!--========== Header ==========-->
+            <header class="header">
+                <div class="header__container">
+                    <div class="title__container">
+                        <h1 class="header__title">
+                            <span class="header__title__bold">Profile</span>
+                        </h1>
+                    </div>
+
+                    <div class="header__logo">
+                        <img
+                            src="../assets/img/profile.png"
+                            alt=""
+                            class="header__img"
+                        />
+                        <span class="header__logo-name">Masbro</span>
+                    </div>
+
+                    <div class="header__toggle">
+                        <i class="uil uil-bars" id="header-toggle"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--========== Dashboard ==========-->
+            <section class="dashboard" id="dashboard">
+                <div class="content__container-task row w-100">
+                    <div class="col-lg-6">
+                        <!--========== Todo Information ==========-->
+                        <div class="input__container">
+                            <h3 class="title small__title">
+                                Tampilkan,
+                                <span class="bold__title small__title"
+                                    >Profile</span
+                                >
+                            </h3>
+                            <img
+                                src="../assets/img/profile.png"
+                                alt=""
+                                class="profile__img"
+                            />
+                            <div class="list__items">
+                                <div class="list__item">
+                                    <span class="input__item">
+                                        <i
+                                            class="uil uil-user list-icon icon__blue"
+                                        ></i>
+                                    </span>
+                                    <p class="form-list list__text">Masbro</p>
+                                </div>
+                            </div>
+                            <div class="list__items">
+                                <div class="list__item">
+                                    <span class="input__item">
+                                        <i
+                                            class="uil uil-at list-icon icon__blue"
+                                        ></i>
+                                    </span>
+                                    <p class="form-list list__text">
+                                        sujarniel@email.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== FOOTER ==========-->
+            <footer class="footer">
+                <div class="footer__container">
+                    <p class="footer__text">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        , made with love by
+                        <span class="title__bold">C Group</span>
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+.link__item,
+.link__item:hover {
+    color: var(--text-color);
+}

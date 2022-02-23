@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="../assets/css/balance-style.css" />
         <link rel="stylesheet" href="../assets/css/income.css" />
 
-        <title>Pemasukan | Peola - Pengelolah keuangan dan kegiatan kamu</title>
+        <title>Notes | Peola - Pengelolah keuangan dan kegiatan kamu</title>
     </head>
     <body>
         <!--========== Aside ==========-->
@@ -71,7 +71,7 @@
                             </a>
                             <a
                                 href="../pages/outcome-page.html"
-                                class="sidenav__link sidenav__active"
+                                class="sidenav__link"
                             >
                                 <i
                                     class="uil uil-money-withdraw sidenav__icon"
@@ -98,7 +98,7 @@
                             </a>
                             <a
                                 href="../pages/notes-page.html"
-                                class="sidenav__link"
+                                class="sidenav__link sidenav__active"
                             >
                                 <i class="uil uil-notes sidenav__icon"></i>
                                 <span class="sidenav__name">Notes</span>
@@ -135,7 +135,7 @@
                 <div class="header__container">
                     <div class="title__container">
                         <h1 class="header__title">
-                            <span class="header__title__bold">Pemasukan</span>
+                            <span class="header__title__bold">Notes</span>
                         </h1>
                     </div>
 
@@ -163,7 +163,7 @@
                             <h3 class="title small__title mb-4">
                                 Tambahkan,
                                 <span class="bold__title small__title"
-                                    >Pengeluaran</span
+                                    >Note</span
                                 >
                             </h3>
                             <form action="">
@@ -175,17 +175,17 @@
                                             class="input__item"
                                         >
                                             <i
-                                                class="uil uil-money-withdraw list-icon icon__outcome"
-                                            ></i
-                                            >Rp.
+                                                class="uil uil-letter-english-a list-icon icon__blue"
+                                            ></i>
                                         </label>
                                         <input
                                             type="text"
                                             class="form-list list__text"
                                             id="price-input"
-                                            placeholder="100.000"
+                                            placeholder="Judul Link"
                                         />
                                     </div>
+
                                     <div class="list__item">
                                         <div
                                             class="input__item dropdown"
@@ -196,7 +196,7 @@
                                                 class="input__item"
                                             >
                                                 <i
-                                                    class="uil uil-money-stack list-icon icon__outcome"
+                                                    class="uil uil-gold list-icon icon__blue"
                                                 ></i>
                                             </label>
                                             <select
@@ -210,84 +210,25 @@
                                                     disabled
                                                     hidden
                                                 >
-                                                    Pilih Saldo
+                                                    Pilih Grup
                                                 </option>
-                                                <option value="Tunai">
-                                                    Tunai
+                                                <option value="Kampus">
+                                                    Kampus
                                                 </option>
-                                                <option value="Bank BRI">
-                                                    Bank BRI
-                                                </option>
-                                                <option value="OVO">OVO</option>
-                                                <option value="Gopay">
-                                                    Gopay
+                                                <option value="Tugas Harian">
+                                                    Tugas Harian
                                                 </option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="list__item">
-                                        <div
-                                            class="input__item dropdown"
-                                            style="width: 100%"
-                                        >
-                                            <label
-                                                for="price-input"
-                                                class="input__item"
-                                            >
-                                                <i
-                                                    class="uil uil-layer-group list-icon icon__outcome"
-                                                ></i>
-                                            </label>
-                                            <select
-                                                id="price-input"
-                                                name="price-input"
-                                                class="form-list list__text select-form"
-                                            >
-                                                <option
-                                                    value=""
-                                                    selected
-                                                    disabled
-                                                    hidden
-                                                >
-                                                    Pilih Kategori
-                                                </option>
-                                                <option value="makanan&minuman">
-                                                    Makanan & Minuman
-                                                </option>
-                                                <option value="elektronik">
-                                                    Elektronik
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="list__item">
-                                        <div
-                                            class="input__item"
-                                            style="width: 100%"
-                                        >
-                                            <label
-                                                for="date-input"
-                                                class="input__item"
-                                            >
-                                                <i
-                                                    class="uil uil-calendar-alt list-icon icon__outcome"
-                                                ></i>
-                                            </label>
-                                            <input
-                                                type="datetime-local"
-                                                class="form-list list__text"
-                                                name=""
-                                                id=""
-                                            />
-                                        </div>
-                                    </div>
+
                                     <div class="list__item text-area">
                                         <label
                                             for="price-input"
                                             class="input__item"
                                         >
                                             <i
-                                                class="uil uil-notes list-icon icon__outcome"
+                                                class="uil uil-notes list-icon icon__blue"
                                             ></i>
                                         </label>
                                         <textarea
@@ -302,12 +243,12 @@
                                 </div>
                                 <div class="list__button-wrapper">
                                     <a
-                                        href="outcome-page.html"
-                                        class="btn btn-alt-red me-2"
+                                        href="notes-page.html"
+                                        class="btn btn-alt-blue me-2"
                                     >
                                         Kembali
                                     </a>
-                                    <input type="submit" class="btn btn-red" />
+                                    <input type="submit" class="btn btn-blue" />
                                 </div>
                             </form>
                         </div>
